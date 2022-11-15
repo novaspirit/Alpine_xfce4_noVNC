@@ -11,7 +11,7 @@ docker build -t alpine-xfce4 Alpine_xfce4_noVNC/
 #### Run Image
 
 ```sh
-docker run -it -p 6080:6080 --name alpine-xfce4 alpine-xfce4
+docker run -it -p 6080:6080 --name alpine-novnc alpine-xfce4
 ```
 
 #### Connect With noVNC
