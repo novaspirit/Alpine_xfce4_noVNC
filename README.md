@@ -1,5 +1,6 @@
 # Alpine xfce4 noVNC
 Simple and minimal Alpine Docker Image providing XFCE4 with html5 noVNC connection
+![preview](demo.png?raw=true "preview")
 
 #### Build Image
 
