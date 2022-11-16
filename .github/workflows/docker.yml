@@ -45,7 +45,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.repository }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/Alpine_xfce4_noVNC
 #            ghcr.io/${{ github.repository }}
 
       - name: Build and push Docker images
