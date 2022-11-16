@@ -1,7 +1,16 @@
 # Alpine xfce4 noVNC
 Simple and minimal Alpine Docker Image providing XFCE4 through html5 noVNC connection
 
+<div align="center">
+
+![GitHub repo size](https://img.shields.io/github/repo-size/novaspirit/Alpine_xfce4_noVNC?label=Repo%20Size&logo=github)
+![Docker Build](https://github.com/novaspirit/Alpine_xfce4_noVNC/workflows/Docker/badge.svg) 
+![Docker Pulls](https://img.shields.io/docker/pulls/justsky/Alpine_xfce4_noVNC)
+![Docker Size](https://img.shields.io/docker/image-size/justsky/Alpine_xfce4_noVNC)
+
 ![preview](preview.png?raw=true "preview")
+
+</div>
 
 #### Build Image
 
