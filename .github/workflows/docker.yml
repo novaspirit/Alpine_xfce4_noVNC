@@ -6,7 +6,8 @@ on:
     - cron: "0 0 * * 1"
   push:
     branches:
-      - main
+      - latest
+      - dev
 
 jobs:
   build:
