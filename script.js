@@ -1,7 +1,7 @@
 //PCM Player : https://github.com/samirkumardas/pcm-player/blob/master/example/server/server.js
 
 window.onload = function () {
-    var socketURL = 'ws://' + window.location.hostname + ':8080'
+    var socketURL = 'ws://' + window.location.hostname + ':56780'
     var player = new PCMPlayer({
         encoding: '16bitInt',
         channels: 2,
