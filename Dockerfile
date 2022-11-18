@@ -23,6 +23,7 @@ USER alpine
 WORKDIR /home/alpine
 
 RUN mkdir -p /home/alpine/.vnc \
+    && echo -e "-Securitytypes=none" > /home/alpine/.vnc/config \
     && echo -e "#!/bin/bash\nstartxfce4 &" > /home/alpine/.vnc/xstartup \
     && echo -e "alpine\nalpine\nn\n" | vncpasswd
 
