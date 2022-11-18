@@ -7,7 +7,6 @@ LABEL maintainer="Don <novaspirit@novaspirit.com>"
 
 RUN apk add --no-cache sudo git xfce4 faenza-icon-theme bash python3 tigervnc xfce4-terminal\
     && adduser -h /home/$user -s /bin/bash -S -D $user \
-    && echo -e "${user} with password ${password}"\
     && echo -e "${password}\n${password}" | passwd $user \
     && echo '${user} ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers \
     && git clone https://github.com/novnc/noVNC /opt/noVNC \
