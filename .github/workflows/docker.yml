@@ -46,7 +46,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/Alpine_xfce4_noVNC
+            ${{ secrets.DOCKERHUB_USERNAME }}/alpine_xfce4_novnc
 #            ghcr.io/${{ github.repository }}
 
       - name: Build and push Docker images
@@ -57,5 +57,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/Alpine_xfce4_noVNC:buildcache
-          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/Alpine_xfce4_noVNC:buildcache,mode=max
+          cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/alpine_xfce4_novnc:buildcache
+          cache-to: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/alpine_xfce4_novnc:buildcache,mode=max
