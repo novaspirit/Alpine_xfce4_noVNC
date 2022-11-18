@@ -2,6 +2,8 @@
 
 Simple and minimal Alpine Docker Image providing XFCE4 through html5 noVNC connection
 
+Step by step tutorial on how this docker is created (https://www.youtube.com/watch?v=8IfTXJRAIJw)
+
 <div align="center">
 
 [![Discord](https://img.shields.io/discord/316245914987528193?logo=discord)](https://discord.com/invite/v8dAnFV) 
