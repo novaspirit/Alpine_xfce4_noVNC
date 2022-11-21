@@ -20,6 +20,14 @@ Step by step tutorial on how this docker is created (https://www.youtube.com/wat
 
 </div>
 
+#### Updates
+
+v0.1.2 removed password requirement for noVNC
+
+v0.1.1 added firefox pulseaudio and audio support
+
+v0.1.0 initial code
+
 #### Build Image
 
 ```sh
