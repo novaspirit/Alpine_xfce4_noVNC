@@ -16,37 +16,39 @@ Step by step tutorial on how this docker is created (https://www.youtube.com/wat
 ![Docker Pulls](https://img.shields.io/docker/pulls/novaspirit/alpine_xfce4_novnc)
 ![Docker Size](https://img.shields.io/docker/image-size/novaspirit/alpine_xfce4_novnc)
 
-![preview](preview.png?raw=true "preview")
+| Alpine Docker with XFCE Desktop inside a web-browser |
+| --- |
+| ![preview](preview.png?raw=true "preview") |
 
 </div>
 
-#### Updates
+### Updates
 
-v0.1.2 removed password requirement for noVNC
+`v0.1.2` removed password requirement for noVNC
 
-v0.1.1 added firefox pulseaudio and audio support
+`v0.1.1` added `firefox` and audio support with `pulseaudio`
 
-v0.1.0 initial code
+`v0.1.0` initial code
 
-#### Build Image
+### Build Image
 
 ```sh
 git clone https://github.com/novaspirit/Alpine_xfce4_noVNC.git
 docker build -t alpine-xfce4 Alpine_xfce4_noVNC/
 ```
 
-#### Run Image
+### Run Image
 
 ```sh
 docker run -it -p 6080:6080 -p 56780:56780 --name alpine-novnc alpine-xfce4
 ```
 
-#### Connect With noVNC
+### Connect With noVNC
 
-Use modern browswer to connect to http://(docker ip):6080/vnc.html
+Use any modern web browser (Chrome/Firefox/Edge/Safari) to connect to: `http://(docker ip):6080/vnc.html`
 
 the predefined password is `alpine`
 
-#### LICENCE
+### LICENSE
 
 MIT
