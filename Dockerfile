@@ -29,7 +29,7 @@ sudo mkdir -p /home/alpine/.vnc & \n\
 sleep 1 \n\
 echo "SecurityTypes=None" | sudo tee -a /home/alpine/.vnc/config \n\
 sleep 1 \n\
-echo -e "#!/bin/bash\nstartxfce4 &" | sudo tee -a /home/alpine/.vnc/xstartup & \n\
+startxfce4 &" | sudo tee -a /home/alpine/.vnc/xstartup & \n\
 sleep 1 \n\
 /usr/bin/vncserver :99 2>&1 | sed  "s/^/[Xtigervnc ] /" & \n\
 sleep 1 \n\
