@@ -20,6 +20,7 @@ RUN npm install --prefix /opt/noVNC audify
 
 USER root
 
+RUN echo -e "\n\n\n\n\n\n" | openssl req -new -x509 -days 365 -nodes -out self.pem -keyout /opt/noVNC/utils/websockify/self.pem
 
 RUN echo $'\0#!/bin/bash\n\
 ls .X99-lock >> /dev/null 2>&1 && rm -rf /tmp/.X99-lock & \n\
